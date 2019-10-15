@@ -48,6 +48,7 @@ def enframe(x,R,L):
     w2 = np.bartlett(L)
     frames = []
     nframes = 1 + int((len(x) -L)/R)
+    print(len(x))
     print('nframes:',nframes);
     
     for t in range(0,nframes):
